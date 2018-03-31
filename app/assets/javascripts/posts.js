@@ -1,4 +1,4 @@
-$(function(){
+// $(function(){
   
   // Fire some ajax
   // $.ajax({
@@ -36,14 +36,14 @@ $(function(){
     // ***************************
 
     // Server side AJAX Model
-  $("a.load_comments").on("click", function(e){
-    $.ajax({
-      url: this.href,
-      dataType: 'script'
-    })
+  // $("a.load_comments").on("click", function(e){
+  //   $.ajax({
+  //     url: this.href,
+  //     dataType: 'script'
+  //   })
 
-    // ***************************
-  e.preventDefault();
+  //   // ***************************
+  // e.preventDefault();
 
-  }) 
-})
+  // }) 
+// })

@@ -10,12 +10,14 @@
   <%= @post.content %>
 </p>
 
-<!-- <p>
-  <%#= link_to "Load Comments", post_comments_path(@post), :class => "load_comments", :remote => true %>
-</p> -->
+<p>
+  <%= link_to "Load Comments", post_comments_path(@post), :class => "load_comments", :remote => true %>
+  <!-- remote true pattern. Remote will create generic event on click and send ajax request to href looking for javascript-->
+</p> 
 
 <div class="comments">
-  <%= render 'comments/comments' %>
+  <%#= render 'comments/comments' %> 
+  
 </div>
 
 <%#= form_for(@comment, :url => post_comments_path(@post)) do |f|  %>
