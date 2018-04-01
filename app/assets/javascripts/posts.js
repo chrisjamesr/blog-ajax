@@ -1,3 +1,4 @@
+// Loading Comments via AJAX- replaced by remote: true
 // $(function(){
   
   // Fire some ajax
@@ -47,3 +48,37 @@
 
   // }) 
 // })
+
+// Submit Comments via AJAX
+// $(function(){
+//   $("#new_comment").on("submit", function(e){
+//     // 1. we need the URL to submit the POST request too
+//     // 2. we need the form data
+//     // Low Level Implementation
+//     $.ajax({
+//       type: ($("input[name='_method']").val() || this.method),
+//       url: this.action,
+//       data: $(this).serialize(),
+      // dataType: "script"
+//       success: (response)=> {
+//         $("#comment_content").val('')
+//         const $ol = $("div.comments ol")
+//         $ol.append(response);
+
+//       }
+//     });
+//     // Send a POST request to the correct place that form would have gone to anywat
+//     // along with the actual form data
+//     e.preventDefault();
+//   })
+// });
+
+
+
+
+
+
+
+
+
+

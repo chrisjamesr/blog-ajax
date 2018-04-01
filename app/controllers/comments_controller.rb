@@ -21,6 +21,7 @@ def create
     # why not just create a comments/show view that shows the LI of one comment?
     # render 'comments/show', :layout => false
     render 'create.js', :layout => false
+    # redirect_to post_path(@post)
   else
     render "posts/show"
   end
